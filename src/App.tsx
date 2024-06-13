@@ -4,9 +4,9 @@ interface AppProps {}
 
 const App: React.FC<AppProps> = ({}) => {
   return (
-    <div>
+    <>
       <h1>Hello World!</h1>
-    </div>
+    </>
   )
 }
 
