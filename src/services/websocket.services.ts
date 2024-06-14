@@ -18,7 +18,6 @@ export const connectWebSocket = (currencyPair: string) => {
   }
   socket.onmessage = (event) => {
     const data = JSON.parse(event.data)
-    console.log(data)
     if (data.type === 'snapshot' || data.type === 'l2update') {
       const bids = data.bids || []
       const offers = data.asks || []
