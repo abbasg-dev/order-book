@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import rootReducer from '../store/reducers'
+import rootReducer from '@/store/reducers'
 import storage from 'redux-persist/lib/storage'
 import {
   FLUSH,

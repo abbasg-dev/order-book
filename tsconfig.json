@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "target": "ESNext" /* Specify ECMAScript target version */,
+    "target": "es2016" /* Specify ECMAScript target version */,
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ] /* Specify library files to be included in the compilation */,
-    "allowJs": false /* Allow JavaScript files to be compiled */,
+    "allowJs": true /* Allow JavaScript files to be compiled */,
     "skipLibCheck": true /* Skip type checking of declaration files */,
     "esModuleInterop": true /* Enables interoperability between CommonJS and ES Modules */,
     "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export */,
     /* Strict Type-Checking Options */
-    "strict": true /* Enable all strict type-checking options */,
+    "strict": false /* Enable all strict type-checking options */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file */,
     /* Module Resolution Options */
     "module": "esnext" /* Specify module code generation */,
@@ -21,6 +21,8 @@
     "isolatedModules": true /* Ensure each file is treated as a separate module */,
     /* JSX Options */
     "jsx": "react-jsx" /* Specify JSX code generation */,
+    "checkJs": true,
+    "pretty": true,
     /* Source Map Options */
     "sourceMap": true /* Generate source maps for better debugging */,
     /* Advanced Options */
@@ -29,12 +31,14 @@
     "declaration": true /* Generate corresponding .d.ts files */,
     "rootDir": "src" /* Specify the root directory of input files */,
     "outDir": "build" /* Specify the output directory */,
-    "baseUrl": "./" /* Base directory to resolve non-relative module names */,
+    "baseUrl": "src" /* Base directory to resolve non-relative module names */,
     "paths": {
       /* Specify path mapping to resolve modules */
-      "@/*": ["src/*"],
-      "@/components/*": ["src/components/*"],
-      "@/pages/*": ["src/pages/*"]
+      "@/*": ["./*"],
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/constants/*": ["constants/*"],
+      "@/store/*": ["store/*"]
     },
     "typeRoots": [
       "/global.d.ts",
@@ -57,7 +61,7 @@
     "emitDecoratorMetadata": true /* Emit design-type metadata for decorated declarations */,
     "experimentalDecorators": true /* Enable experimental support for decorators */
   },
-  "include": ["*.d.ts", "**/*.ts", "**/*.tsx", "**/*.scss"],
+  "include": ["src", "*.d.ts", "src/**/*.tsx", "src/**/*.ts", "src/**/*.scss"],
   "exclude": [
     "node_modules",
     "build",

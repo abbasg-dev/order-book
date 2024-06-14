@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import orderBookReducer from './orderBookReducer'
-import { OrderBookState } from '../../interfaces/order-book.model'
+import orderBookReducer from '@/store/reducers/orderBookReducer'
+import { OrderBookState } from '@/interfaces/order-book.model'
 const rootReducer = combineReducers({
   orderBook: orderBookReducer,
 })

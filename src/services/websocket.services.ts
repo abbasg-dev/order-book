@@ -1,5 +1,5 @@
-import { updateOrderBook } from '../store/slices/orderBookSlices'
-import store from '../store/store'
+import { updateOrderBook } from '@/store/slices/orderBookSlices'
+import store from '@/store/store'
 let socket: WebSocket | null = null
 const websocketURL: string | undefined =
   process.env.REACT_APP_WEB_SOCKET_URL || ''

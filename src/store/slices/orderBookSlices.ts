@@ -1,5 +1,5 @@
-import * as ROUTES from '../../constants/keys'
-import { UpdateOrderBookSlice } from '../../interfaces/order-book.model'
+import * as ROUTES from '@/constants/keys'
+import { UpdateOrderBookSlice } from '@/interfaces/order-book.model'
 
 export const updateOrderBook = (data: {
   bids: Array<[number, number]>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import OrderBook from './components/order-book/order-book.component'
-import TradingViewChart from './components/trading-view-chart/trading-view-chart.component'
+import OrderBook from '@/components/order-book/order-book.component'
+import TradingViewChart from '@/components/trading-view-chart/trading-view-chart.component'
 const App: React.FC = () => {
   const [currencyPair, setCurrencyPair] = useState<string>('BTC-USD')
   return (

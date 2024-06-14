@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { AppState } from '../../store/reducers'
-import { connectWebSocket } from '../../services/websocket.services'
-import { OrderBookProps } from '../../interfaces/order-book.model'
-const OrderBook: React.FC<OrderBookProps> = ({ currencyPair }) => {
+import { AppState } from '@/store/reducers'
+import { connectWebSocket } from '@/services/websocket.services'
+import { OrderBookProps } from '@/interfaces/order-book.model'
+const OrderBook: React.FC<OrderBookProps> = (props: OrderBookProps) => {
+  const { currencyPair } = props
   const dispatch = useDispatch()
   const orderBook = useSelector((state: AppState) => state.orderBook)
   useEffect(() => {

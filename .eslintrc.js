@@ -8,6 +8,22 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+      alias: {
+        map: [
+          ['@', path.resolve(__dirname, 'src')],
+          ['@/components', path.resolve(__dirname, 'src/components')],
+          ['@/pages', path.resolve(__dirname, 'src/pages')],
+          ['@/constants', path.resolve(__dirname, 'src/constants')],
+          ['@/store', path.resolve(__dirname, 'src/store')],
+        ],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
   extends: [
     // Use recommended rules for React

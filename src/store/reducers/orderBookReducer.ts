@@ -1,5 +1,5 @@
-import { OrderBookState } from '../../interfaces/order-book.model'
-import * as ROUTES from '../../constants/keys'
+import { OrderBookState } from '@/interfaces/order-book.model'
+import * as ROUTES from '@/constants/keys'
 
 const initialState: OrderBookState = {
   bids: [],

@@ -1,4 +1,4 @@
-import * as ROUTES from '../constants/keys'
+import * as ROUTES from '@/constants/keys'
 
 export interface OrderBookProps {
   currencyPair: string

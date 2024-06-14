@@ -15,6 +15,13 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.graphql'], // allows us leave out extensions when importing
     mainFields: ['source', 'module', 'main'],
     modules: [path.resolve('node_modules')],
+    alias: {
+      '@': path.resolve(__dirname, '..', 'src'),
+      '@/components': path.resolve(__dirname, '..', 'src/components'),
+      '@/pages': path.resolve(__dirname, '..', 'src/pages'),
+      '@/constants': path.resolve(__dirname, '..', 'src/constants'),
+      '@/store': path.resolve(__dirname, '..', 'src/store'),
+    },
   },
   module: {
     rules: [

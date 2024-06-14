@@ -10,6 +10,15 @@
     "@babel/preset-typescript" // Transpile TypeScript
   ],
   "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@": "./src"
+        }
+      }
+    ],
     "@babel/plugin-transform-class-properties", // Allow class properties syntax
     "@babel/plugin-transform-runtime" // Enable async/await and other ES6+ features
   ]
