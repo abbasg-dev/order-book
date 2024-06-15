@@ -20,6 +20,7 @@ module.exports = {
           ['@/pages', path.resolve(__dirname, 'src/pages')],
           ['@/constants', path.resolve(__dirname, 'src/constants')],
           ['@/store', path.resolve(__dirname, 'src/store')],
+          ['@/test', path.resolve(__dirname, 'src/test')],
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
