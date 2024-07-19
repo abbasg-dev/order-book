@@ -1,0 +1,3 @@
+.git .vscode .dockerignore .gitignore .env config dist build node_modules
+docker-compose.dev.yaml docker-compose.prod.yaml docker-compose.yaml Dockerfile.dev
+Dockerfile.prod Makefile README.md

@@ -10,4 +10,8 @@ module.exports = {
     port: 3000,
   },
   plugins: [new ReactRefreshWebpackPlugin()],
+  // Need for docker container reloading
+  watchOptions: {
+    poll: true,
+  },
 }

@@ -16,7 +16,7 @@ const App: React.FC = () => {
         <option value="BCH-USD">BCH-USD</option>
       </select>
       <OrderBook currencyPair={currencyPair} />
-      <TradingViewChart symbol={currencyPair.replace('-', '')} />
+      <TradingViewChart symbol={currencyPair.replace('-', '')} /> */}
     </div>
   )
 }
