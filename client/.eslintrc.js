@@ -14,14 +14,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
       alias: {
-        map: [
-          ['@', path.resolve(__dirname, 'src')],
-          ['@/components', path.resolve(__dirname, 'src/components')],
-          ['@/pages', path.resolve(__dirname, 'src/pages')],
-          ['@/constants', path.resolve(__dirname, 'src/constants')],
-          ['@/store', path.resolve(__dirname, 'src/store')],
-          ['@/test', path.resolve(__dirname, 'src/test')],
-        ],
+        map: [['@', path.resolve(__dirname, 'src')]],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },

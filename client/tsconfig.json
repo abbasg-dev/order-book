@@ -34,11 +34,7 @@
     "baseUrl": "src" /* Base directory to resolve non-relative module names */,
     "paths": {
       /* Specify path mapping to resolve modules */
-      "@/*": ["./*"],
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
-      "@/constants/*": ["constants/*"],
-      "@/store/*": ["store/*"]
+      "@/*": ["./*"]
     },
     "typeRoots": [
       "/global.d.ts",
