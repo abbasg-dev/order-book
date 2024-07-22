@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: orderbook
+spec:
+  selector:
+    app: orderbook
+  type: LoadBalancer
+  ports:
+    - port: 3000
+      targetPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderbook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderbook
+  template:
+    metadata:
+      labels:
+        app: orderbook
+    spec:
+      containers:
+        - name: orderbook
+          image: order-book/client:latest
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always
